@@ -4,6 +4,10 @@
     background-color: lawngreen;
     position: relative;
 }
+.grasslands:focus{
+    border: none;
+    outline: none;
+}
 
 .lancelot{
     height: 20px;
