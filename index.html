@@ -7,14 +7,19 @@
 <body ng-controller="GameController">
     {{2+2}}
     
-    <div class="grasslands">
-        <div class="lancelot" style="top: {{y}}%;"></div>
+    <div class="grasslands" data-ng-keydown="move($event)" tabindex="0">
+        <div class="lancelot" style="top: {{y}}%; left: {{x}}%;"></div>
     </div>
     
     
     <button type="button" class="btn btn-large btn-default" ng-click="moveDown()" >MOVE DOWN</button>
     
+    <button type="button" class="btn btn-large btn-default" ng-click="moveRight()" >MOVE RIGHT</button>
     
+    
+    <button type="button" class="btn btn-large btn-default" ng-click="moveUp()" >MOVE UP</button>
+    
+    <button type="button" class="btn btn-large btn-default" ng-click="moveLeft()" >MOVE LEFT</button>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     
